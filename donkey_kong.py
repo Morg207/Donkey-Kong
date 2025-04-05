@@ -534,6 +534,7 @@ class Player():
         for barrel in kong.barrels[:]:
            if player_rect != None:
               if player_rect.colliderect(barrel.rect):
+                    oil_drum.fire_ball_timer = pygame.time.get_ticks()/1000
                     reset_game()
         if pygame.time.get_ticks()/1000 - self.score_time > self.show_time:
             self.draw_score = False
