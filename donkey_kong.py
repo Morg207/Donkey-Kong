@@ -327,7 +327,7 @@ class Barrel():
             if self.count > 35:
                 self.rotate_state += 1
                 if self.rotate_state > 4:
-                    self.rotate_state = 1
+                    self.rotate_state = 0
                 self.count = 0
             self.image = pygame.transform.rotate(barrel1,self.angle)
             self.rect = self.image.get_rect()
