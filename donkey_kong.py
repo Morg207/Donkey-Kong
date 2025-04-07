@@ -499,10 +499,10 @@ class Player():
 
     def climb_controller(self):
         for joystick in joysticks:
-            verticle = joystick.get_axis(1)
+            vertical = joystick.get_axis(1)
             for ladder in ladders:
                 if ladder.rect.colliderect(self.rect) and not ladder.broken and not self.jumping:
-                    if verticle < -0.4:
+                    if vertical < -0.4:
                        self.climb(ladder)
                        
     def climb(self,ladder):
