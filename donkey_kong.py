@@ -434,7 +434,6 @@ class Player():
         self.hammer_time = 0
         self.score_x = self.rect.centerx
         self.score_y = self.rect.centery
-        self.draw_score = False
         self.score_time = 0
         
     def move_keyboard(self,keys):
