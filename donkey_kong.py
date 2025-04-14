@@ -403,11 +403,10 @@ class Kong():
         display.blit(self.image,(150,20))
         if self.level_passed:
             oil_drum.fire_ball_timer = pygame.time.get_ticks()/100
-            draw_text("Victory!",380,400,55)
+            draw_text("Victory!",375,400,60)
             if pygame.time.get_ticks()/1000 - self.level_timer > self.level_load_time:
                 reset_game()
             
-
 class Hammer():
     def __init__(self,x,y):
         self.x = x
