@@ -16,6 +16,7 @@ The project is built for educational purposes and as a programming challenge to 
 - Collision detection
 - Retro-inspired 2D sprite graphics
 - Authentic level layout from the original arcade game
+- Hammer collecting and barrel smashing.
 
 ---
 
