@@ -35,7 +35,7 @@ mario_hammer_jump_left = pygame.transform.flip(mario_hammer_jump,True,False)
 mario_hammer_overhead = pygame.transform.scale(pygame.image.load("images/hammer_overhead.png"),(tile_width * 3,tile_height * 2)).convert_alpha()
 mario_hammer_overhead_left = pygame.transform.flip(mario_hammer_overhead,True,False)
 hammer = pygame.transform.scale(pygame.image.load("images/hammer.png"),(tile_width * 2.2,tile_height * 2.5)).convert_alpha()
-barrel1 = pygame.transform.scale(pygame.image.load("images/barrel.png"),(30, 30)).convert_alpha()
+barrel1 = pygame.transform.scale(pygame.image.load("images/barrel.png"),(35, 35)).convert_alpha()
 barrel2 = pygame.transform.scale(pygame.image.load("images/barrel2.png"),(tile_width * 1.3,tile_height * 2.5)).convert_alpha()
 barrel2 = pygame.transform.rotate(barrel2,90)
 barrel3 = pygame.transform.scale(pygame.image.load("images/barrel3.png"),(tile_width * 1.5,tile_height * 2)).convert_alpha()
@@ -406,7 +406,7 @@ class Kong():
             draw_text("Victory!",375,400,60)
             if pygame.time.get_ticks()/1000 - self.level_timer > self.level_load_time:
                 reset_game()
-            
+
 class Hammer():
     def __init__(self,x,y):
         self.x = x
